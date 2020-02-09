@@ -11,8 +11,6 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.Robot;
 import frc.robot.RobotContainer;
-import frc.robot.subsystems.Drivetrain;
-import edu.wpi.first.wpilibj.SpeedControllerGroup;
 
 
 public class Drive extends CommandBase {
@@ -42,7 +40,6 @@ public class Drive extends CommandBase {
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {
-    
   }
 
   // Returns true when the command should end.
