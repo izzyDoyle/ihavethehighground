@@ -25,9 +25,15 @@ public class Drivetrain extends SubsystemBase {
   public SpeedControllerGroup left = new SpeedControllerGroup(frontLeft, backLeft);
   public SpeedControllerGroup right = new SpeedControllerGroup(frontRight,backRight);
   public Drivetrain() {
-
   }
-
+public void setLeftMotors(double speed){
+  frontLeft.set(speed);
+  backLeft.set(speed);
+}
+public void setRightMotors(double speed){
+  frontRight.set(speed);
+  backRight.set(speed);
+}
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
